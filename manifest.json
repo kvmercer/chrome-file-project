@@ -1,0 +1,6 @@
+{
+    "name": "Chrome Video/Audio File Detector",
+    "description": "This extension can detect video and/or audio files on a webpage, and allow you to choose which ones you would like to download!",
+    "version": "0.1",
+    "manifest_version": 3
+}
