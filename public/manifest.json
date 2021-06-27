@@ -9,15 +9,15 @@
   },
   "content_scripts": [
     {
-    "matches": ["http://*/*", "https://*/*"],
-    "js": ["detector.js"]
+      "matches": ["<all_urls>"],
+      "js": ["/static/js/background.js"]
     }
   ],
   "icons": {
     "192": "logo192.png",
     "512": "logo512.png"
   },
-  "permissions": [
-  ]
+  "permissions": [],
+  "content_security_policy": "script-src 'self' 'sha256-Mo3YWtp0UgJjxDGtUs7lvi167o3Nn9qGMaVs6ZiNv70='"
 }
 
