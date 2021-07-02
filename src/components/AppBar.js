@@ -13,8 +13,10 @@ import ListItemAvatar from '@material-ui/core/ListItemAvatar';
 import ListItemText from '@material-ui/core/ListItemText';
 import ListSubheader from '@material-ui/core/ListSubheader';
 import Avatar from '@material-ui/core/Avatar';
-import AddIcon from '@material-ui/icons/Add';
 import MoreIcon from '@material-ui/icons/MoreVert';
+import GetAppOutlinedIcon from '@material-ui/icons/GetAppOutlined';
+import {Button} from "@material-ui/core";
+import Background from "../background";
 
 const messages = [
     {
@@ -41,7 +43,10 @@ const messages = [
 
 const useStyles = makeStyles((theme) => ({
     text: {
-        padding: theme.spacing(2, 2, 0),
+        textAlign: 'center',
+        padding: theme.spacing(2),
+        backgroundColor: "#f50057",
+        color: 'white'
     },
     paper: {
         paddingBottom: 50,
@@ -77,7 +82,7 @@ export default function BottomAppBar() {
             <CssBaseline />
             <Paper square className={classes.paper}>
                 <Typography className={classes.text} variant="h5" gutterBottom>
-                    All videos
+                    Video Downloader
                 </Typography>
                 <List className={classes.list}>
                     {messages.map(({title, description, image}, index) => (
@@ -95,11 +100,11 @@ export default function BottomAppBar() {
             </Paper>
             <AppBar position="fixed" color="primary" className={classes.appBar}>
                 <Toolbar>
-                    <Typography>
-                        Video Downloader
-                    </Typography>
+                    <Button color="secondary" variant="contained" onClick={() => Background()}>
+                        Search
+                    </Button>
                     <Fab color="secondary" aria-label="add" className={classes.fabButton}>
-                        <AddIcon />
+                        <GetAppOutlinedIcon />
                     </Fab>
                     <div className={classes.grow} />
                     <IconButton edge="end" color="inherit">

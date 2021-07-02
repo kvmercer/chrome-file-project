@@ -18,6 +18,6 @@
     "512": "logo512.png"
   },
   "permissions": [],
-  "content_security_policy": "script-src 'self' 'sha256-Mo3YWtp0UgJjxDGtUs7lvi167o3Nn9qGMaVs6ZiNv70='"
+  "content_security_policy": "script-src 'self' 'sha256-zOKyoHKGoLiOxYU3o+hx5CdWWqakXIKS4RnrnMpQ9+E='"
 }
 
