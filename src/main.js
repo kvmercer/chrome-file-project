@@ -3,9 +3,8 @@ window.onload = function() {
 	var filename = document.getElementById('filename');
 	var format = document.getElementById('format');
 	var dButton = document.getElementById('download');
-	
+
 	dButton.onclick = function(){
-		console.log("button  clicked");
 		chrome.tabs.query({'active': true, 'lastFocusedWindow': true}, function (tabs) {
 	    	var url = tabs[0].url;
 	    	var message  = {
