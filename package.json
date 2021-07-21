@@ -1,7 +1,7 @@
 {
   "name": "package.json",
   "version": "1.0.0",
-  "description": "This project aims to help users build their own simple chrome extension for downloading videos from youtube.\r # project-setup:",
+  "description": "Simple chrome extension for downloading video/audio files",
   "scripts": {},
   "author": "",
   "license": "ISC",
@@ -9,13 +9,5 @@
     "express": "^4.17.1",
     "ytdl-core": "^4.9.0"
   },
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/learningdollars/saurav-chrome-download-youtube-videos.git"
-  },
-  "bugs": {
-    "url": "https://github.com/learningdollars/saurav-chrome-download-youtube-videos/issues"
-  },
-  "homepage": "https://github.com/learningdollars/saurav-chrome-download-youtube-videos#readme"
+  "main": "index.js"
 }

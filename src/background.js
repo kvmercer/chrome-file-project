@@ -17,7 +17,7 @@ chrome.runtime.onMessage.addListener(function(message) {
 	url += queryString;
 	console.log(url);
 	chrome.downloads.download({url:url,
-		filename: "YoutubeDownloader/" + message.filename +'.' + message.format}, function(downID) {
+		filename: "ChromeDownloader/" + message.filename +'.' + message.format}, function(downID) {
 			chrome.downloads.show(downID);
 	});
 });
