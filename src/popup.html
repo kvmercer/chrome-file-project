@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chrome Extension for Youtube Downloading</title>
+	<script type="text/javascript" src="main.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1>Youtube Downloader</h1>
+	<label for="quality" style="display: none;">Quality</label>
+	<select id="quality" style="display: none;">
+		 <option value="highest">highest</option>
+		 <option value="lowest">lowest</option>
+		 <option value="highestaudio">highestaudio</option>
+		 <option value="lowestaudio">lowestaudio</option>
+		 <option value="highestvideo">highestvideo</option>
+		 <option value="lowestvideo">lowestvideo</option>
+	</select>
+	<div class="download-container">
+		<div class="download-options">
+			<label for="filename">Save As</label>
+			<input id="filename" placeholder="<filename>">
+		</div>
+		<div class="download-options">
+			<label for="format">Format</label>
+			<div>
+				<select id="format">
+					<option value="mp4">mp4</option>
+					<option value="mp3">mp3</option>
+			   </select>
+			</div>
+		</div>
+		<div class="download-options">
+			<button id="download">Download</button>
+		</div>
+	</div>
+
+
+	
+</body>
+</html>
