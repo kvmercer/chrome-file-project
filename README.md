@@ -6,6 +6,12 @@ This is an extention to download videos/audio files off of websites, most notabl
 
 Ensure node is installed - https://nodejs.org/en/
 
+Install dependencies
+
+```bash
+npm install
+```
+
 Run the javascript file through node
 
 ```bash
